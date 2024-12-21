@@ -8,7 +8,7 @@ const cors=require('cors');
 const app=express()
 app.use(express.json());
 app.use(cors())
-const PORT=process.env.PORT||3005;
+const PORT=3005;
 const openai = new OpenAI({
     apiKey: api_key,//process.env.OPENAI_API_KEY,
   });
