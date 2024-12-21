@@ -12,7 +12,7 @@ const EditPost = () => {
     useEffect(() => {
         console.log("hi ")
         //console.log(id)
-        axios.get(`http://localhost:3005/posts/${id}`)
+        axios.get(`https://blog-post-y3cx.onrender.com/posts/${id}`)
           .then(response =>{
             setdata(response.data);
             setTitle(response.data.title);
