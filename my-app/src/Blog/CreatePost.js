@@ -13,7 +13,7 @@ const CreatePost = () => {
       alert("Fill complete details to create a post");
       return;
     }
-    await axios.post('https://blog-post-y3cx.onrender.com/posts', { title, content }).catch(err => console.error(err));;
+    await axios.post('https://blog-post-bb.onrender.com/posts', { title, content }).catch(err => console.error(err));;
     navigate('/');
   };
 
