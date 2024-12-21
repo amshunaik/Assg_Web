@@ -8,7 +8,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://blog-post-y3cx.onrender.com/posts');
+        const response = await axios.get('https://blog-post-bb.onrender.com/posts');
         const posts = response.data; // Extracting the array
         setPosts(posts)
        console.log(posts);
