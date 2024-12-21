@@ -1,46 +1,5 @@
-// import React, { useEffect, useState } from 'react';
-// import { Link } from 'react-router-dom';
-// import axios from 'axios';
 
-// const PostPage = () => {
-    
-//   const [posts, setPosts] = useState([]);
-//   useEffect(() => {
-//     const fetchData = async () => {
-//       try {
-//         const response = await axios.get('http://localhost:3005/posts');
-//         const posts = response.data; // Extracting the array
-//         setPosts(posts)
-//        console.log(posts);
-//       } catch (error) {
-//         console.error("Error fetching posts:", error);
-//       }
-//     };
-//     fetchData();
-//   }, []); // Dependency array
 
-// //   useEffect(() => {
-// //     axios.get('http://localhost:5000/posts').then((res) => setPosts(res.data));
-// //   }, []);
-
-//   return (
-//     <div>
-//       <h1>Blog Posts</h1>
-//       <Link to="/create">Create</Link>
-//       <ul>
-//         {posts.map((post) => (
-//           <div key={post._id}>
-//             <Link to={`/posts/${post._id}`}>{post.title}</Link>
-//             <p>{post.content}</p>
-//             <p>{post.summary}</p>
-//           </div>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// };
-
-// export default PostPage;
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
@@ -54,7 +13,7 @@ function PostPage() {
   useEffect(() => {
     console.log("hi ")
     //console.log(id)
-    axios.get(`http://localhost:3005/posts/${id}`)
+    axios.get(`https://blog-post-y3cx.onrender.com/posts/${id}`)
       .then(response => setPost(response.data))
       .catch(err => console.error(err));
 
@@ -62,7 +21,7 @@ function PostPage() {
   }, [id]);
 
   const handleDelete = () => {
-    axios.delete(`http://localhost:3005/posts/${id}`)
+    axios.delete(`https://blog-post-y3cx.onrender.com/posts/${id}`)
       .then(() => navigate('/'))
       .catch(err => console.error(err));
   };
