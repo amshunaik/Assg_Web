@@ -24,7 +24,7 @@ const EditPost = () => {
 
     const Updatedpost=async(e)=>{
         e.preventDefault();
-        axios.put(`http://localhost:3005/posts/${id}`, { title, content })
+        axios.put(`https://blog-post-y3cx.onrender.com/posts/${id}`, { title, content })
             .catch(err => console.error(err));
 
 
