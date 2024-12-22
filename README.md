@@ -1,6 +1,7 @@
 # Blog Project - CRUD operations
 A simple Blog Post application that provides basic CRUD (Create, Read, Update, Delete) functionality for managing blog posts. This project is built with React for the frontend and Node.js with Express for the backend.
 
+Deployment link : https://blog-post-frontend-f1y0.onrender.com/
 ## Table of Contents
 * Overview
 * Frontend Setup
