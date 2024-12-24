@@ -28,7 +28,10 @@ const EditPost = () => {
             .catch(err => console.error(err));
 
 
+        setTimeout(() => {
         navigate(`/posts/${id}`)
+        
+       }, 1000);
     };
       
   return (
