@@ -10,7 +10,7 @@ app.use(express.json());
 //app.use(cors())
 
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://blog-post-frontend-f1y0.onrender.com');
+  res.header('Access-Control-Allow-Origin', 'https://blogpost-fxut.onrender.com');
   res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE');
   res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   next();
