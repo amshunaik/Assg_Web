@@ -33,12 +33,12 @@ const EditPost = () => {
       
   return (
     <div  className=' flex-row f-fit mt-12 w-[600px]'>
-        <h1 className='text-center font-bold text-2xl'>Edit Blog </h1>
+        <h1 className='text-center font-bold text-2xl'>EDIT BLOG </h1>
 
-        <div className='mt-8'>
+        <div className='mt-4'>
         <button onClick={Updatedpost} className='bg-black px-2 rounded-lg text-white float-right '>Update</button>
 
-        <div className='pt-8'>
+        <div className='pt-10'>
         <label className='block p-1 bg-gray-200 ' > Title</label>
           <input
             type="text"
