@@ -13,7 +13,7 @@ const CreatePost = () => {
       alert("Fill complete details to create a post");
       return;
     }
-    await axios.post('https://blogpost-ir8s.onrender.com/posts', { title, content });
+    await axios.post('https://blogpost1-nxy5.onrender.com/posts', { title, content });
     navigate('/');
   };
 
