@@ -10,7 +10,7 @@ const MainFrame = () => {
     useEffect(() => {
       const fetchData = async () => {
         try {
-          const response = await axios.get('https://blogpost-fxut.onrender.com/posts');
+          const response = await axios.get('https://blogpost-ir8s.onrender.com/posts');
           const posts = response.data; // Extracting the array
           setPosts(posts)
          console.log(posts);
