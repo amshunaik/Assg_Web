@@ -12,7 +12,7 @@ const EditPost = () => {
     useEffect(() => {
         console.log("hi ")
         //console.log(id)
-        axios.get(`https://blogpost-ir8s.onrender.com/posts/${id}`)
+        axios.get(`https://blogpost1-nxy5.onrender.com/posts/${id}`)
           .then(response =>{
             setdata(response.data);
             setTitle(response.data.title);
@@ -24,7 +24,7 @@ const EditPost = () => {
 
     const Updatedpost=async(e)=>{
         e.preventDefault();
-        axios.put(`https://blogpost-ir8s.onrender.com/posts/${id}`, { title, content })
+        axios.put(https://blogpost1-nxy5.onrender.com/posts/${id}`, { title, content })
             .catch(err => console.error(err));
 
 
