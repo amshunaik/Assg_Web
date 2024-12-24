@@ -7,9 +7,14 @@ const { OpenAI } = require('openai');
 const cors=require('cors');
 const app=express()
 app.use(express.json());
-app.use(cors())
+//app.use(cors())
 
-
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'https://blogpost1-nxy5.onrender.com');
+  res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  next();
+});
 const PORT=3005;
 const openai = new OpenAI({apiKey: process.env.OPENAI_API_KEY,
   });
