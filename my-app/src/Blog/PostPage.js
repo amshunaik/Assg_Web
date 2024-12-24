@@ -13,7 +13,7 @@ function PostPage() {
   useEffect(() => {
     console.log("hi ")
     //console.log(id)
-    axios.get(`https://blog-post-bb.onrender.com/posts/${id}`)
+    axios.get(`https://blogpost-fxut.onrender.com/posts/${id}`)
       .then(response => setPost(response.data))
       .catch(err => console.error(err));
 
@@ -21,7 +21,7 @@ function PostPage() {
   }, [id]);
 
   const handleDelete = () => {
-    axios.delete(`https://blog-post-bb.onrender.com/posts/${id}`)
+    axios.delete(`https://blogpost-fxut.onrender.com/posts/${id}`)
       .then(() => navigate('/'))
       .catch(err => console.error(err));
   };
