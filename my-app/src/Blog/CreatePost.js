@@ -18,9 +18,9 @@ const CreatePost = () => {
   };
 
   return (
-    <div className='w-[600px] mt-12'>
-      <h1 className='text-xl font-bold text-center'>Create New  Post</h1>
-      <div className=' float-right mt-8 flex gap-4'>
+   <div className='w-[600px] mt-12'>
+      <h1 className='text-2xl font-bold text-center'>CREATE NEW POST</h1>
+      <div className=' float-right mt-8 flex gap-8'>
       <button onClick={() => navigate('/')}>Cancel</button>
 
       <button type='submit' onClick={handleSubmit} className='bg-black px-2 text-white rounded-lg'>Create</button>
@@ -33,7 +33,7 @@ const CreatePost = () => {
             placeholder='Enter title ...'
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            required className='block  p-1 border-2 w-full mb-2'
+            required className='block p-1 border-2 w-full mb-2 text-orange-600 text-lg '
           />
         </div>
         <div>
@@ -43,7 +43,7 @@ const CreatePost = () => {
           placeholder='Enter Content ......'
             value={content}
             onChange={(e) => setContent(e.target.value)}
-            required className='block   p-1 border-2 w-full mb-2 ' rows="6"
+            required className='block   p-1 border-2 w-full mb-2 text-lg text-gray-800' rows="6"
           />
         </div>
       </div>
