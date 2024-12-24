@@ -6,13 +6,10 @@ const Root = () => {
   return (
     <div className='flex flex-wrap '>
         <SideBar/>
-        <div className='order-last w-[1000px]'>
+        <div className=' pl-[350px] order-last pb-[20px] '>
             <Outlet/>
         </div>
-        
-       
-
-      
+ 
     </div>
   )
 }
