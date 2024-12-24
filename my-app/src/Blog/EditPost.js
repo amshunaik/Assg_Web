@@ -24,7 +24,7 @@ const EditPost = () => {
 
     const Updatedpost=async(e)=>{
         e.preventDefault();
-        axios.put(https://blogpost1-nxy5.onrender.com/posts/${id}`, { title, content })
+        axios.put(`https://blogpost1-nxy5.onrender.com/posts/${id}`, { title, content })
             .catch(err => console.error(err));
 
 
