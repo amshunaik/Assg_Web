@@ -26,16 +26,16 @@ const HomePage = () => {
 
   return (
     <div className='w-full'>
-      <h1 className='text-center justify-center text-2xl font-bold mt-4 w-full'>Blog Posts</h1>
-      <div className='mt-10'>
-      <Link to="/create" className='border-2 rounded-lg px-4 text-xl float-right mr-12 bg-gray-800 text-white align-center'>+ Create</Link>
+      <h1 className='text-center justify-center text-3xl font-bold mt-4 w-full'>BLOG POSTS</h1>
+      <div className='mt-4'>
+      <Link to="/create" className='border-2 rounded-lg px-4 text-xl float-right mr-10 bg-gray-800 text-white align-center'>+ Create</Link>
       <ul className='flex flex-wrap w-full gap-10 mt-16 pt-12'>
         {posts.map((post) => (
-          <li key={post._id} className='w-[300px] border-2 p-4 h-[300px]'>
+          <li key={post._id} className='w-[300px] border-2 p-4 h-[300px] border-gray-300 bg-gray-100'>
              <Link to={`/posts/${post._id}`}>
-              <h2 className='text-center font-bold'>{post.title}</h2>
+              <h2 className='text-center font-bold text-xl text-red-600'>{post.title.toUpperCase()}</h2>
              
-             <p className='mt-4 overFlow-auto overscroll-contain'><span className='font-medium'>Summary : </span>{post.content}</p>
+             <p className='mt-4 overFlow-auto overscroll-contain'><span className='font-medium text-lg'>Summary : </span>{post.content}</p>
             </Link>
             
           </li>
