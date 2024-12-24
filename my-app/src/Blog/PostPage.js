@@ -33,25 +33,26 @@ function PostPage() {
         
       <div className='flex-col gap-2 pt-12 '>
             <div className='pb-4'>
-                <h1 className='font-bold text-center text-xl'>{post.title}</h1>
-                <div className='float-right flex gap-4 mt-4'>
+                <h1 className='font-bold text-center text-2xl '>{post.title}</h1>
+                <div className='float-right flex gap-8 my-4 '>
                     <Link to={`/edit/${id}`} className='font-semibold'>Edit</Link>
                     <button onClick={handleDelete} className='bg-black text-white rounded-lg px-2'>Delete</button>
                 </div>
             </div>
-            <div className='pb-4 mt-8'>
+            <div className='pb-6 mt-8'>
                 <label htmlFor="" className='block p-1 bg-gray-200'>Summary </label>
-                {post.summary?<p>{post.summary}</p>:<p>{post.content}</p>}
+                {post.summary?<p className='border-2 p-2'>{post.summary}</p>:<p className='border-2 p-2'>{post.content}</p>}
                
             </div>
             <div className='pb-4'>
                 <label htmlFor="" className='block p-1 bg-gray-200'>Content </label>
-                <p>{post.content}</p>
+                <p className='border-2 p-2'>{post.content}</p>
                   
             </div>
       </div>
       
     </div>
+      
   );
 }
 
